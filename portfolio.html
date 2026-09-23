@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohammed Ashick Rahman | Ethical Hacker & Vulnerability Assessment Specialist</title>
+  <title>Mohammed Ashick Rahman | Offensive Security Specialist & CV</title>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts & FontAwesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <script>
@@ -20,7 +20,7 @@
         extend: {
           colors: {
             cyberDark: '#030712',
-            cyberCard: 'rgba(9, 16, 32, 0.78)',
+            cyberCard: 'rgba(9, 16, 32, 0.82)',
             cyberBorder: 'rgba(0, 243, 255, 0.22)',
             neonCyan: '#00f3ff',
             neonGreen: '#00ff9d',
@@ -91,6 +91,30 @@
       100% { box-shadow: 0 0 0 0 rgba(255, 42, 95, 0); }
     }
 
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #cv-sheet, #cv-sheet * {
+        visibility: visible;
+      }
+      #cv-sheet {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #030712; }
     ::-webkit-scrollbar-thumb { background: rgba(0, 243, 255, 0.25); border-radius: 3px; }
@@ -114,34 +138,26 @@
           </div>
           <div>
             <div class="font-heading font-bold text-base tracking-wide text-white flex items-center gap-2">
-              MOHAMMED ASHICK <span class="text-xs px-2 py-0.5 rounded bg-rose-950/80 text-rose-300 font-mono border border-rose-500/30">CVSS 9.8 AUDITOR</span>
+              MOHAMMED ASHICK <span class="text-xs px-2 py-0.5 rounded bg-rose-950/80 text-rose-300 font-mono border border-rose-500/30">CVSS 9.8</span>
             </div>
-            <div class="text-[11px] font-mono text-cyan-400/70 tracking-widest uppercase">HTC Ethical Hacker • Red Team Specialist</div>
+            <div class="text-[11px] font-mono text-cyan-400/70 tracking-widest uppercase">Offensive Security • HTC Global Services</div>
           </div>
         </a>
 
-        <nav class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-wider text-slate-300">
+        <nav class="hidden md:flex items-center gap-7 font-mono text-xs uppercase tracking-wider text-slate-300">
           <a href="#hero" class="hover:text-cyan-400 transition-colors">Mission</a>
-          <a href="#assessment-report" class="text-rose-400 hover:text-rose-300 transition-colors flex items-center gap-1.5 font-bold">
-            <i class="fa-solid fa-file-shield text-xs"></i> Formal Audit
+          <a href="#curriculum-vitae" class="text-cyan-400 font-bold hover:text-cyan-300 transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-file-lines text-xs"></i> Interactive CV
           </a>
-          <a href="#research" class="hover:text-cyan-400 transition-colors">Lab Exploits</a>
+          <a href="#assessment-report" class="hover:text-rose-400 transition-colors">Security Audit</a>
+          <a href="#projects" class="hover:text-cyan-400 transition-colors">Key Projects</a>
           <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
           <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
         </nav>
 
         <div class="flex items-center gap-3">
-          <a href="https://www.linkedin.com/in/ashickkk" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-cyan-400 text-base transition">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://tryhackme.com/p/ashickk" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-rose-400 text-base transition">
-            <i class="fa-solid fa-user-ninja"></i>
-          </a>
-          <a href="https://leetcode.com/u/ashickkk/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-amber-400 text-base transition">
-            <i class="fa-solid fa-code"></i>
-          </a>
-          <a href="mailto:mohammed.ashickk@gmail.com" class="hidden sm:inline-block px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-cyan-500/10 border border-cyan-400/40 text-cyan-300 hover:bg-cyan-400 hover:text-black transition">
-            PING ME
+          <a href="#curriculum-vitae" class="inline-flex items-center gap-2 text-xs font-mono text-cyan-300 bg-cyan-950/50 border border-cyan-500/40 px-3.5 py-1.5 rounded-full hover:bg-cyan-900/60 transition">
+            <i class="fa-solid fa-download text-[11px]"></i> VIEW CV
           </a>
         </div>
       </div>
@@ -153,8 +169,8 @@
         
         <div class="lg:col-span-7 space-y-6">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-rose-950/50 border border-rose-500/30 text-xs font-mono text-rose-300">
-            <i class="fa-solid fa-bug text-rose-400"></i>
-            <span>INTERNAL VULNERABILITY ASSESSMENT & OFFENSIVE EXPLOITATION</span>
+            <i class="fa-solid fa-terminal text-rose-400"></i>
+            <span>OFFENSIVE SECURITY SPECIALIST & ETHICAL HACKER</span>
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-white tracking-tight leading-[1.12]">
@@ -165,71 +181,65 @@
           </h1>
 
           <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl">
-            Offensive Security Specialist pursuing <span class="text-cyan-300 font-semibold">BCA Cybersecurity integrated with HTC</span> at <span class="text-slate-100 font-medium">Hindustan Institute of Technology and Science</span>. Active in a <span class="text-cyan-300 font-semibold">1-Year Project Trainee Internship at HTC</span> discovering & exploiting high-risk vulnerabilities, conducting CVSS 9.8 assessments, and mastering the TryHackMe Red Teamer track.
+            Offensive Security Specialist undergoing a <span class="text-cyan-300 font-semibold">1-year integrated internship at HTC Global Services</span>. Experienced in vulnerability assessment, proof-of-concept (PoC) exploit validation (MS17-010 RCE, CVSS 9.8), DAST testing (OWASP ZAP, Nessus, Burp Suite), and log monitoring correlation. Active TryHackMe Red Teamer track practitioner with strong algorithmic foundations (130+ LeetCode challenges solved).
           </p>
 
           <!-- Core Stat Tickers -->
           <div class="grid grid-cols-3 gap-3 pt-2 max-w-lg">
+            <div class="glass-panel p-3 rounded-lg border-cyan-500/20 text-center">
+              <div class="text-2xl font-bold font-mono text-cyan-400">9.0/10</div>
+              <div class="text-[11px] font-mono text-slate-400">BCA Cyber Sec (HITS)</div>
+            </div>
             <div class="glass-panel p-3 rounded-lg border-rose-500/30 text-center">
               <div class="text-2xl font-bold font-mono text-rose-400">CVSS 9.8</div>
               <div class="text-[11px] font-mono text-slate-400">RCE Audit Validated</div>
             </div>
-            <div class="glass-panel p-3 rounded-lg border-cyan-500/20 text-center">
-              <div class="text-2xl font-bold font-mono text-cyan-400">130+</div>
-              <div class="text-[11px] font-mono text-slate-400">LeetCode Solved</div>
-            </div>
             <div class="glass-panel p-3 rounded-lg border-emerald-500/20 text-center">
-              <div class="text-2xl font-bold font-mono text-emerald-400">1 Yr</div>
-              <div class="text-[11px] font-mono text-slate-400">HTC Trainee Track</div>
+              <div class="text-2xl font-bold font-mono text-emerald-400">130+</div>
+              <div class="text-[11px] font-mono text-slate-400">LeetCode Solved</div>
             </div>
           </div>
 
           <!-- Buttons -->
           <div class="flex flex-wrap gap-4 pt-3">
-            <a href="#assessment-report" class="px-6 py-3 rounded-lg bg-gradient-to-r from-rose-500 to-red-600 text-white font-semibold text-xs font-mono tracking-wider uppercase hover:opacity-90 transition shadow-glow-red flex items-center gap-2">
-              <i class="fa-solid fa-file-contract"></i> Read Assessment Report
+            <a href="#curriculum-vitae" class="px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-black font-semibold text-xs font-mono tracking-wider uppercase hover:opacity-90 transition shadow-glow-cyan flex items-center gap-2">
+              <i class="fa-solid fa-file-pdf"></i> Read Full Curriculum Vitae
             </a>
-            <a href="https://www.linkedin.com/in/ashickkk" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg glass-panel text-cyan-300 font-semibold text-xs font-mono tracking-wider uppercase hover:bg-cyan-500/10 transition flex items-center gap-2">
-              <i class="fa-brands fa-linkedin text-cyan-400"></i> Connect on LinkedIn
+            <a href="#assessment-report" class="px-6 py-3 rounded-lg glass-panel text-rose-300 font-semibold text-xs font-mono tracking-wider uppercase hover:bg-rose-500/10 transition flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved"></i> MS17-010 Audit (F-01)
             </a>
           </div>
         </div>
 
         <!-- Telemetry Audit Snapshot Card -->
         <div class="lg:col-span-5">
-          <div class="glass-panel rounded-xl overflow-hidden border border-rose-500/30 shadow-2xl">
-            <div class="bg-[#0b1220] px-4 py-3 border-b border-rose-500/20 flex items-center justify-between">
+          <div class="glass-panel rounded-xl overflow-hidden border border-cyan-500/30 shadow-2xl">
+            <div class="bg-[#0b1220] px-4 py-3 border-b border-cyan-500/20 flex items-center justify-between">
               <div class="flex items-center gap-2">
                 <span class="w-3 h-3 rounded-full bg-rose-500"></span>
                 <span class="w-3 h-3 rounded-full bg-amber-500"></span>
                 <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-                <span class="text-xs font-mono text-rose-300 ml-2">auditor@internal-scope:~$</span>
+                <span class="text-xs font-mono text-cyan-300 ml-2">verified-dossier:active</span>
               </div>
-              <span class="text-[10px] font-mono bg-rose-950 text-rose-300 px-2 py-0.5 rounded border border-rose-800">F-01 VERIFIED</span>
+              <span class="text-[10px] font-mono bg-cyan-950 text-cyan-300 px-2 py-0.5 rounded border border-cyan-800">AUTHENTICATED CV</span>
             </div>
 
             <div class="p-5 font-mono text-xs space-y-3 leading-relaxed">
               <div class="text-slate-400">
-                <span class="text-rose-400">#</span> nmap --script vuln 10.0.2.5
+                <span class="text-cyan-400">#</span> cat candidate_profile.json
               </div>
-              <div class="bg-black/50 p-3 rounded text-[11px] text-slate-300 border border-rose-500/20 space-y-1">
-                <div class="text-cyan-300">Host: 10.0.2.5 (Windows 7 / VirtualBox NAT)</div>
-                <div class="text-slate-400">PORT 445/tcp: open (microsoft-ds)</div>
-                <div class="text-rose-400 font-bold mt-1">| smb-vuln-ms17-010: VULNERABLE</div>
-                <div class="text-slate-300 pl-2 border-l border-rose-500/40 text-[10px]">
-                  ID: CVE-2017-0143 (MS17-010 SMBv1 RCE)<br>
-                  CVSS v3: 9.8 (Critical) | Risk: HIGH<br>
-                  Impact: Unauthenticated System-level RCE
-                </div>
+              <div class="bg-black/50 p-3 rounded text-[11px] text-slate-300 border border-cyan-500/20 space-y-1">
+                <div><span class="text-slate-500">Candidate:</span> <strong class="text-white">Mohammed Ashick Rahman</strong></div>
+                <div><span class="text-slate-500">Location:</span> Chennai, Tamil Nadu, India</div>
+                <div><span class="text-slate-500">Contact:</span> +91 6383949298 | mohammed.ashickk@gmail.com</div>
+                <div><span class="text-slate-500">Current Engagement:</span> HTC Global Services (1-Yr Trainee)</div>
+                <div><span class="text-slate-500">Degree:</span> BCA in Cyber Security (CGPA: 9.0/10.0)</div>
+                <div><span class="text-slate-500">Track:</span> TryHackMe Red Teamer & Web App Pentesting</div>
               </div>
 
               <div class="flex items-center justify-between text-xs pt-1 font-mono">
-                <span class="text-slate-400">Assessor Email:</span>
-                <a href="mailto:mohammed.ashickk@gmail.com" class="text-cyan-300 hover:underline">mohammed.ashickk@gmail.com</a>
-              </div>
-              <div class="flex items-center justify-between text-xs font-mono">
-                <span class="text-slate-400">Assessment Date:</span>
-                <span class="text-emerald-400">September 23, 2026</span>
+                <span class="text-slate-400">CV Status:</span>
+                <span class="text-emerald-400 font-bold"><i class="fa-solid fa-circle-check"></i> Integrated & Downloadable</span>
               </div>
             </div>
           </div>
@@ -238,9 +248,223 @@
       </div>
     </section>
 
-    <!-- FORMAL VULNERABILITY ASSESSMENT REPORT SECTION -->
-    <section id="assessment-report" class="py-20 px-5 lg:px-10 max-w-7xl mx-auto w-full">
+    <!-- INTERACTIVE CURRICULUM VITAE EMBED SECTION -->
+    <section id="curriculum-vitae" class="py-20 px-5 lg:px-10 max-w-6xl mx-auto w-full">
       
+      <!-- CV Top Header & Action Controls -->
+      <div class="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-cyan-500/20 pb-5">
+        <div>
+          <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest flex items-center gap-2">
+            <i class="fa-solid fa-file-invoice"></i> Verified Curriculum Vitae
+          </div>
+          <h2 class="text-3xl font-heading font-bold text-white mt-1">Professional CV Document</h2>
+          <p class="text-sm text-slate-400 mt-1">Complete resume dossier structured from your formal template.</p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-400/40 text-cyan-300 font-mono text-xs hover:bg-cyan-400 hover:text-black transition flex items-center gap-2">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+          </button>
+          <a href="mailto:mohammed.ashickk@gmail.com" class="px-4 py-2 rounded-lg bg-rose-500/20 border border-rose-500/40 text-rose-300 font-mono text-xs hover:bg-rose-500 hover:text-white transition flex items-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i> Contact Candidate
+          </a>
+        </div>
+      </div>
+
+      <!-- CV DOCUMENT CONTAINER -->
+      <div id="cv-sheet" class="glass-panel p-8 sm:p-12 rounded-2xl border-cyan-500/30 shadow-2xl space-y-8 bg-[#070e1c]">
+        
+        <!-- CV Header / Bio Data -->
+        <div class="border-b border-slate-700/60 pb-6 text-center space-y-2">
+          <h1 class="text-3xl sm:text-4xl font-extrabold font-heading text-white tracking-wide">
+            MOHAMMED ASHICK RAHMAN
+          </h1>
+          <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1 font-mono text-xs text-slate-300">
+            <span><i class="fa-solid fa-location-dot text-cyan-400 mr-1"></i>Chennai, Tamil Nadu, India</span>
+            <span><i class="fa-solid fa-phone text-emerald-400 mr-1"></i>+91 6383949298</span>
+            <a href="mailto:mohammed.ashickk@gmail.com" class="text-cyan-300 hover:underline"><i class="fa-solid fa-envelope text-cyan-400 mr-1"></i>mohammed.ashickk@gmail.com</a>
+          </div>
+          <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-1 font-mono text-xs pt-1 text-slate-400">
+            <a href="https://www.linkedin.com/in/ashickkk" target="_blank" rel="noopener" class="text-cyan-300 hover:underline"><i class="fa-brands fa-linkedin text-cyan-400 mr-1"></i>LinkedIn</a>
+            <span>•</span>
+            <a href="https://github.com" target="_blank" rel="noopener" class="text-slate-300 hover:underline"><i class="fa-brands fa-github text-slate-200 mr-1"></i>GitHub</a>
+            <span>•</span>
+            <a href="https://tryhackme.com/p/ashickk" target="_blank" rel="noopener" class="text-rose-400 hover:underline"><i class="fa-solid fa-user-ninja text-rose-400 mr-1"></i>TryHackMe</a>
+            <span>•</span>
+            <a href="https://leetcode.com/u/ashickkk/" target="_blank" rel="noopener" class="text-amber-400 hover:underline"><i class="fa-solid fa-code text-amber-400 mr-1"></i>LeetCode</a>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 max-w-4xl mx-auto leading-relaxed pt-3 text-justify sm:text-center">
+            Offensive Security Specialist and Ethical Hacker undergoing a 1-year integrated internship at HTC Global Services. Experienced in vulnerability assessment, proof-of-concept (PoC) exploit validation (MS17-010 RCE, CVSS 9.8), DAST testing (OWASP ZAP, Nessus, Burp Suite), and log monitoring correlation. Active TryHackMe Red Teamer track practitioner with strong algorithmic problem-solving foundations (130+ LeetCode challenges solved).
+          </p>
+        </div>
+
+        <!-- Section: Education -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 border-b border-cyan-500/20 pb-1.5">
+            <i class="fa-solid fa-graduation-cap text-cyan-400"></i>
+            <h3 class="font-heading font-bold text-base uppercase tracking-wider text-white">Education</h3>
+          </div>
+
+          <div class="space-y-3 font-sans text-xs sm:text-sm">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center">
+              <div>
+                <strong class="text-white font-heading">Bachelor of Computer Applications (BCA) in Cyber Security</strong>
+                <p class="text-slate-400 text-xs">Hindustan Institute of Technology and Science (HITS), Chennai</p>
+              </div>
+              <div class="text-right sm:text-right font-mono text-xs mt-1 sm:mt-0">
+                <span class="text-cyan-300">2024 – 2027</span>
+                <div class="text-emerald-400 font-bold">CGPA: 9.0 / 10.0</div>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center pt-2">
+              <div>
+                <strong class="text-white font-heading">Senior Secondary School Examination (CBSE - Class XII)</strong>
+                <p class="text-slate-400 text-xs">Al-Hira Model Senior Secondary School, Chennai</p>
+              </div>
+              <div class="text-right sm:text-right font-mono text-xs mt-1 sm:mt-0">
+                <span class="text-cyan-300">2024</span>
+                <div class="text-emerald-400 font-bold">Percentage: 85.20%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Experience & Internships -->
+        <div class="space-y-5">
+          <div class="flex items-center gap-2 border-b border-cyan-500/20 pb-1.5">
+            <i class="fa-solid fa-briefcase text-rose-400"></i>
+            <h3 class="font-heading font-bold text-base uppercase tracking-wider text-white">Experience & Internships</h3>
+          </div>
+
+          <!-- HTC Role -->
+          <div class="space-y-2">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+              <div>
+                <span class="text-white font-heading font-bold text-base">HTC Global Services</span>
+                <div class="text-xs text-cyan-300 font-mono">Project Trainee - Offensive Security & Ethical Hacking (1-Year Integrated Program)</div>
+              </div>
+              <div class="font-mono text-xs text-slate-400">
+                Chennai, India | <span class="text-emerald-400">August 2025 – Present</span>
+              </div>
+            </div>
+            <ul class="text-xs sm:text-sm text-slate-300 space-y-1.5 list-disc list-outside ml-4 leading-relaxed">
+              <li>Conduct authorized internal vulnerability assessments and penetration testing across enterprise host systems, network services, and web endpoints.</li>
+              <li>Discover, analyze, and safely execute proof-of-concept (PoC) exploits against high-severity network flaws, including unauthenticated Remote Code Execution vulnerabilities (e.g., MS17-010/CVSS 9.8).</li>
+              <li>Execute web application security assessments against modern attack surfaces, identifying OWASP Top 10 vulnerabilities such as SQL Injection (SQLi) authentication bypasses and Broken Object Level Authorization (BOLA/IDOR).</li>
+              <li>Leverage industry tooling—Nmap (NSE), Burp Suite, OWASP ZAP, Tenable Nessus, and Metasploit to perform port reconnaissance, automated vulnerability scanning, traffic inspection, and exploit verification.</li>
+              <li>Correlate offensive exploit traffic with log monitoring tools and security event streams to identify detection gaps, tune alerting thresholds, and assist defensive teams.</li>
+              <li>Author comprehensive, CVSS-aligned vulnerability assessment reports detailing technical evidence, attack paths, operational impact, and prioritized patch remediation.</li>
+            </ul>
+          </div>
+
+          <!-- CodSoft Role -->
+          <div class="space-y-2 pt-3">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+              <div>
+                <span class="text-white font-heading font-bold text-base">CodSoft</span>
+                <div class="text-xs text-cyan-300 font-mono">Artificial Intelligence Intern</div>
+              </div>
+              <div class="font-mono text-xs text-slate-400">
+                Remote | <span class="text-cyan-300">July 2025 – July 2025</span>
+              </div>
+            </div>
+            <ul class="text-xs sm:text-sm text-slate-300 space-y-1.5 list-disc list-outside ml-4 leading-relaxed">
+              <li>Built an intelligent Face Detection & Recognition System using computer vision techniques to detect facial landmarks and perform accurate identity verification across image and video streams for biometric security use cases.</li>
+              <li>Implemented an Image Captioning Model combining computer vision and machine learning pipelines to extract contextual scene features and generate descriptive textual captions.</li>
+              <li>Developed a collaborative-filtering Recommendation System and a Rule-Based Conversational Chatbot in Python utilizing pattern matching and predictive analytics workflows.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section: Key Projects -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 border-b border-cyan-500/20 pb-1.5">
+            <i class="fa-solid fa-code-branch text-amber-400"></i>
+            <h3 class="font-heading font-bold text-base uppercase tracking-wider text-white">Key Projects</h3>
+          </div>
+
+          <!-- Project 1: OWASP Juice Shop -->
+          <div class="space-y-1.5">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+              <span class="text-white font-bold text-sm">OWASP Juice Shop Vulnerability Assessment & Security Reporting</span>
+              <span class="font-mono text-[11px] text-cyan-400">OWASP ZAP, Burp Suite, HTML/CSS</span>
+            </div>
+            <ul class="text-xs sm:text-sm text-slate-300 space-y-1 list-disc list-outside ml-4 leading-relaxed">
+              <li>Conducted black-box web application vulnerability assessments on the OWASP Juice Shop lab, uncovering critical flaws including SQL Injection, Broken Object Level Authorization (BOLA/IDOR), and sensitive data exposure.</li>
+              <li>Integrated OWASP ZAP and Burp Suite for automated vulnerability crawling, spidering, and manual request parameter manipulation.</li>
+              <li>Authored a structured, customized HTML vulnerability assessment report incorporating executive summaries, CVSS severity metrics, PoC reproduction steps, and technical remediation strategies.</li>
+            </ul>
+          </div>
+
+          <!-- Project 2: BCA Synopsis Portal -->
+          <div class="space-y-1.5 pt-2">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+              <span class="text-white font-bold text-sm">BCA Synopsis Portal & AI Studio</span>
+              <span class="font-mono text-[11px] text-cyan-400">Node.js, Express, MongoDB, Gemini API, bcryptjs, html2pdf.js</span>
+            </div>
+            <ul class="text-xs sm:text-sm text-slate-300 space-y-1 list-disc list-outside ml-4 leading-relaxed">
+              <li>Built an academic project synopsis management platform with a responsive multi-step wizard to automate project proposal creation, metadata ingestion, and verification.</li>
+              <li>Integrated the Google Gemini API to dynamically generate modular system architectures and polish technical abstracts into formal academic formats.</li>
+              <li>Developed a client-side live preview typesetting engine using html2pdf.js to render input data and digital verification stamps into standardized A4 reports.</li>
+              <li>Implemented secure authentication with bcryptjs password hashing and persistent data modeling using MongoDB Atlas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Section: Technical Skills & Tools -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 border-b border-cyan-500/20 pb-1.5">
+            <i class="fa-solid fa-screwdriver-wrench text-emerald-400"></i>
+            <h3 class="font-heading font-bold text-base uppercase tracking-wider text-white">Technical Skills & Tools</h3>
+          </div>
+
+          <div class="space-y-2 text-xs sm:text-sm font-sans">
+            <div>
+              <strong class="text-cyan-300 font-mono">Offensive Security & Methodologies:</strong> 
+              <span class="text-slate-300">VAPT, Red Teaming Operations, Exploit PoC Validation, Threat Surface Reconnaissance, Attack Vector Mapping, CVSS v3.1 Scoring, OWASP Top 10 (SQLi, IDOR/BOLA, Broken Authentication)</span>
+            </div>
+            <div>
+              <strong class="text-cyan-300 font-mono">Security & Testing Tools:</strong> 
+              <span class="text-slate-300">Nmap (NSE), Burp Suite Community/Pro, OWASP ZAP, Tenable Nessus, Metasploit Framework, Wireshark, Netcat, OWASP Juice Shop, PortSwigger Web Security Labs</span>
+            </div>
+            <div>
+              <strong class="text-cyan-300 font-mono">Defensive & Detection Concepts:</strong> 
+              <span class="text-slate-300">System & Event Log Monitoring, Anomaly Detection, Traffic Inspection, Detection Gap Analysis, Patch Verification & Hardening</span>
+            </div>
+            <div>
+              <strong class="text-cyan-300 font-mono">Languages & Scripting:</strong> 
+              <span class="text-slate-300">Python, Bash, JavaScript (ES6+), Node.js, Java, SQL, PowerShell, HTML5/CSS3</span>
+            </div>
+            <div>
+              <strong class="text-cyan-300 font-mono">Platforms & Environments:</strong> 
+              <span class="text-slate-300">Kali Linux, Windows (Client/Server), Linux (Ubuntu/Debian), MongoDB Atlas, VirtualBox/VMware</span>
+            </div>
+            <div>
+              <strong class="text-cyan-300 font-mono">Algorithmic Problem Solving:</strong> 
+              <span class="text-slate-300">Data Structures & Algorithms (130+ LeetCode Challenges Solved), TryHackMe Red Teamer Track Progress</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Languages -->
+        <div class="space-y-2 pt-1 border-t border-slate-700/60">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-language text-cyan-400"></i>
+            <h4 class="font-heading font-bold text-xs uppercase tracking-wider text-white">Languages</h4>
+          </div>
+          <div class="flex flex-wrap gap-x-6 gap-y-1 text-xs font-mono text-slate-300">
+            <div><strong class="text-cyan-400">Native / Bilingual:</strong> English, Tamil</div>
+            <div><strong class="text-emerald-400">Full Professional Working:</strong> Hindi, Urdu</div>
+            <div><strong class="text-amber-400">Elementary Proficiency:</strong> Arabic, German</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORMAL VULNERABILITY ASSESSMENT REPORT SECTION (MS17-010 EternalBlue) -->
+    <section id="assessment-report" class="py-16 px-5 lg:px-10 max-w-7xl mx-auto w-full">
       <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-cyan-500/20 pb-6">
         <div>
           <div class="text-xs font-mono text-rose-400 uppercase tracking-widest flex items-center gap-2">
@@ -248,80 +472,77 @@
           </div>
           <h2 class="text-3xl font-heading font-bold text-white mt-1">Internal Network Security Report</h2>
           <p class="text-sm text-slate-400 mt-1">
-            Authorized internal vulnerability assessment conducted against an isolated virtual environment[cite: 2].
+            Authorized internal vulnerability assessment conducted against an isolated virtual environment.
           </p>
         </div>
 
         <div class="flex items-center gap-3">
           <span class="text-xs font-mono px-3 py-1.5 rounded-lg bg-rose-950/60 border border-rose-500/40 text-rose-300">
-            Target: Windows 7 (10.0.2.5)[cite: 2]
+            Target: Windows 7 (10.0.2.5)
           </span>
           <span class="text-xs font-mono px-3 py-1.5 rounded-lg bg-cyan-950/60 border border-cyan-500/40 text-cyan-300">
-            Tool: Nmap 7.95 + NSE[cite: 2]
+            Tool: Nmap 7.95 + NSE
           </span>
         </div>
       </div>
 
       <!-- Formal Finding Dossier Card -->
       <div class="glass-panel rounded-2xl border-rose-500/40 overflow-hidden shadow-2xl mb-8">
-        
         <div class="bg-gradient-to-r from-rose-950/80 via-[#0a1222] to-cyan-950/60 px-6 py-4 border-b border-rose-500/30 flex flex-wrap items-center justify-between gap-4">
           <div class="flex items-center gap-3">
             <span class="px-2.5 py-1 rounded bg-rose-600 text-white font-mono text-xs font-bold tracking-wider">
-              FINDING F-01[cite: 2]
+              FINDING F-01
             </span>
             <h3 class="font-heading font-bold text-lg text-white">
-              SMBv1 Remote Code Execution (MS17-010 / EternalBlue)[cite: 2]
+              SMBv1 Remote Code Execution (MS17-010 / EternalBlue)
             </h3>
           </div>
           <div class="flex items-center gap-3 font-mono text-xs">
             <span class="text-rose-400 font-bold bg-rose-950/70 border border-rose-500/40 px-3 py-1 rounded">
-              CVSS 9.8 (CRITICAL)[cite: 2]
+              CVSS 9.8 (CRITICAL)
             </span>
             <span class="text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-3 py-1 rounded">
-              STATUS: OPEN / REPRODUCIBLE[cite: 2]
+              STATUS: OPEN / REPRODUCIBLE
             </span>
           </div>
         </div>
 
         <div class="p-6 sm:p-8 space-y-6 text-sm">
-          
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-xl bg-black/40 border border-cyan-500/15 font-mono text-xs">
             <div>
               <div class="text-slate-500 uppercase">Target Host</div>
-              <div class="text-white font-bold mt-0.5">10.0.2.5:445[cite: 2]</div>
+              <div class="text-white font-bold mt-0.5">10.0.2.5:445</div>
             </div>
             <div>
               <div class="text-slate-500 uppercase">CVE Reference</div>
-              <div class="text-rose-400 font-bold mt-0.5">CVE-2017-0143[cite: 2]</div>
+              <div class="text-rose-400 font-bold mt-0.5">CVE-2017-0143</div>
             </div>
             <div>
               <div class="text-slate-500 uppercase">CVSS v3 Vector</div>
-              <div class="text-cyan-300 font-bold mt-0.5 truncate" title="AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">AV:N/AC:L/PR:N/UI:N...[cite: 2]</div>
+              <div class="text-cyan-300 font-bold mt-0.5 truncate" title="AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H">AV:N/AC:L/PR:N/UI:N...</div>
             </div>
             <div>
               <div class="text-slate-500 uppercase">Detection Script</div>
-              <div class="text-emerald-400 font-bold mt-0.5 truncate">NSE-smb-vuln-ms17-010[cite: 2]</div>
+              <div class="text-emerald-400 font-bold mt-0.5 truncate">NSE-smb-vuln-ms17-010</div>
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
             <div class="space-y-3">
               <h4 class="font-heading font-bold text-white flex items-center gap-2 text-base">
                 <i class="fa-solid fa-circle-info text-cyan-400"></i> Vulnerability Description
               </h4>
               <p class="text-slate-300 leading-relaxed text-xs sm:text-sm">
-                The target host exposes SMBv1 on TCP port 445 and is vulnerable to MS17-010, an unauthenticated memory corruption flaw in Microsoft's SMBv1 handling[cite: 2]. Weaponized as "EternalBlue", this vector permits arbitrary kernel code execution without authentication or user interaction[cite: 2], famously leveraged during the WannaCry and NotPetya ransomware attacks[cite: 2].
+                The target host exposes SMBv1 on TCP port 445 and is vulnerable to MS17-010, an unauthenticated memory corruption flaw in Microsoft's SMBv1 handling. Weaponized as "EternalBlue", this vector permits arbitrary kernel code execution without authentication or user interaction, famously leveraged during the WannaCry and NotPetya ransomware attacks.
               </p>
               
               <h4 class="font-heading font-bold text-white flex items-center gap-2 text-base pt-2">
                 <i class="fa-solid fa-triangle-exclamation text-rose-400"></i> Business & Operational Impact
               </h4>
               <ul class="text-xs font-mono text-slate-300 space-y-1.5 list-disc list-inside">
-                <li><strong class="text-rose-300">Unauthenticated RCE:</strong> Complete compromise of host integrity, confidentiality, and availability[cite: 2].</li>
-                <li><strong class="text-rose-300">Pivoting Foothold:</strong> Enables frictionless lateral movement and worm-like self-propagation[cite: 2].</li>
-                <li><strong class="text-rose-300">Ransomware Exposure:</strong> Susceptible to automated commodity exploitation tools and worm payloads[cite: 2].</li>
+                <li><strong class="text-rose-300">Unauthenticated RCE:</strong> Complete compromise of host integrity, confidentiality, and availability.</li>
+                <li><strong class="text-rose-300">Pivoting Foothold:</strong> Enables frictionless lateral movement and worm-like self-propagation.</li>
+                <li><strong class="text-rose-300">Ransomware Exposure:</strong> Susceptible to automated commodity exploitation tools and worm payloads.</li>
               </ul>
             </div>
 
@@ -330,22 +551,21 @@
                 <i class="fa-solid fa-terminal text-emerald-400"></i> Technical Evidence & NSE Output
               </h4>
               <div class="bg-black/80 rounded-xl p-4 border border-rose-500/30 font-mono text-[11px] text-slate-300 leading-relaxed overflow-x-auto">
-                <div class="text-slate-500">$ nmap --script vuln 10.0.2.5[cite: 2]</div>
-                <div class="text-slate-400">Starting Nmap 7.95 at 2026-09-22 13:33 IST[cite: 2]</div>
-                <div class="text-slate-400">Nmap scan report for 10.0.2.5 (latency 0.00070s)[cite: 2]</div>
-                <div class="text-cyan-300 mt-1">PORT    STATE SERVICE[cite: 2]</div>
-                <div class="text-slate-300">135/tcp open  msrpc[cite: 2]</div>
-                <div class="text-slate-300">139/tcp open  netbios-ssn[cite: 2]</div>
-                <div class="text-slate-300">445/tcp open  microsoft-ds[cite: 2]</div>
-                <div class="mt-2 text-rose-400 font-bold">| smb-vuln-ms17-010:[cite: 2]</div>
-                <div class="text-rose-300 font-bold">|   VULNERABLE:[cite: 2]</div>
-                <div class="text-slate-300">|   Remote Code Execution in Microsoft SMBv1 (ms17-010)[cite: 2]</div>
-                <div class="text-slate-300">|   State: VULNERABLE | IDs: CVE:CVE-2017-0143[cite: 2]</div>
-                <div class="text-slate-300">|   Risk factor: HIGH (CVSS 9.8)[cite: 2]</div>
-                <div class="text-slate-500 mt-1">Nmap done: 1 IP address scanned in 128.16 seconds[cite: 2]</div>
+                <div class="text-slate-500">$ nmap --script vuln 10.0.2.5</div>
+                <div class="text-slate-400">Starting Nmap 7.95 at 2026-09-22 13:33 IST</div>
+                <div class="text-slate-400">Nmap scan report for 10.0.2.5 (latency 0.00070s)</div>
+                <div class="text-cyan-300 mt-1">PORT    STATE SERVICE</div>
+                <div class="text-slate-300">135/tcp open  msrpc</div>
+                <div class="text-slate-300">139/tcp open  netbios-ssn</div>
+                <div class="text-slate-300">445/tcp open  microsoft-ds</div>
+                <div class="mt-2 text-rose-400 font-bold">| smb-vuln-ms17-010:</div>
+                <div class="text-rose-300 font-bold">|   VULNERABLE:</div>
+                <div class="text-slate-300">|   Remote Code Execution in Microsoft SMBv1 (ms17-010)</div>
+                <div class="text-slate-300">|   State: VULNERABLE | IDs: CVE:CVE-2017-0143</div>
+                <div class="text-slate-300">|   Risk factor: HIGH (CVSS 9.8)</div>
+                <div class="text-slate-500 mt-1">Nmap done: 1 IP address scanned in 128.16 seconds</div>
               </div>
             </div>
-
           </div>
 
           <div class="pt-4 border-t border-cyan-500/15">
@@ -354,212 +574,78 @@
             </h4>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
               <div class="p-3 bg-black/40 rounded-lg border border-amber-500/30">
-                <div class="text-amber-400 font-bold mb-1">1. Deprecate SMBv1[cite: 2]</div>
+                <div class="text-amber-400 font-bold mb-1">1. Deprecate SMBv1</div>
                 <p class="text-slate-300 text-[11px]">
-                  Disable SMB 1.0 via Windows Features or execute PowerShell: <code class="text-cyan-300">Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol</code>[cite: 2].
+                  Disable SMB 1.0 via Windows Features or execute PowerShell: <code class="text-cyan-300">Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol</code>.
                 </p>
               </div>
 
               <div class="p-3 bg-black/40 rounded-lg border border-cyan-500/30">
-                <div class="text-cyan-300 font-bold mb-1">2. Deploy Patch[cite: 2]</div>
+                <div class="text-cyan-300 font-bold mb-1">2. Deploy Patch</div>
                 <p class="text-slate-300 text-[11px]">
-                  Apply the official Microsoft MS17-010 security rollup (KB4013389 or corresponding OS update) immediately[cite: 2].
+                  Apply the official Microsoft MS17-010 security rollup (KB4013389 or corresponding OS update) immediately.
                 </p>
               </div>
 
               <div class="p-3 bg-black/40 rounded-lg border border-emerald-500/30">
-                <div class="text-emerald-400 font-bold mb-1">3. Network Isolation[cite: 2]</div>
+                <div class="text-emerald-400 font-bold mb-1">3. Network Isolation</div>
                 <p class="text-slate-300 text-[11px]">
-                  Block inbound ports 139/445 at firewall borders[cite: 2], enforce SMB signing, and re-scan post-patch to verify zero exploitability[cite: 2].
+                  Block inbound ports 139/445 at firewall borders, enforce SMB signing, and re-scan post-patch to verify zero exploitability.
                 </p>
               </div>
             </div>
           </div>
-
-        </div>
-
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="glass-panel p-4 rounded-xl border-cyan-500/20">
-          <div class="text-xs font-mono text-cyan-400 font-bold mb-1">PHASE 1[cite: 2]</div>
-          <div class="font-heading font-bold text-white text-sm">Full TCP Port Sweep[cite: 2]</div>
-          <p class="text-xs text-slate-400 mt-1">Ports 1-65535 discovery and service version fingerprinting via Nmap[cite: 2].</p>
-        </div>
-        <div class="glass-panel p-4 rounded-xl border-rose-500/30 bg-rose-950/10">
-          <div class="text-xs font-mono text-rose-400 font-bold mb-1">PHASE 2[cite: 2]</div>
-          <div class="font-heading font-bold text-white text-sm">NSE Vulnerability Scripts[cite: 2]</div>
-          <p class="text-xs text-slate-400 mt-1">Targeted SMB scripts validating MS10-054, MS10-061, and MS17-010[cite: 2].</p>
-        </div>
-        <div class="glass-panel p-4 rounded-xl border-cyan-500/20">
-          <div class="text-xs font-mono text-emerald-400 font-bold mb-1">PHASE 3[cite: 2]</div>
-          <div class="font-heading font-bold text-white text-sm">Verification & CVSS Rating[cite: 2]</div>
-          <p class="text-xs text-slate-400 mt-1">Cross-referencing CVE records, exploit availability, and impact vectors[cite: 2].</p>
-        </div>
-        <div class="glass-panel p-4 rounded-xl border-cyan-500/20">
-          <div class="text-xs font-mono text-amber-400 font-bold mb-1">PHASE 4[cite: 2]</div>
-          <div class="font-heading font-bold text-white text-sm">Actionable Reporting[cite: 2]</div>
-          <p class="text-xs text-slate-400 mt-1">Formal dossier compilation with technical evidence and remediation SLAs[cite: 2].</p>
         </div>
       </div>
-
     </section>
 
-    <!-- Hands-on Lab Exploitation Case Studies Section -->
-    <section id="research" class="py-16 px-5 lg:px-10 max-w-7xl mx-auto w-full">
+    <!-- Key Projects Section -->
+    <section id="projects" class="py-16 px-5 lg:px-10 max-w-7xl mx-auto w-full">
       <div class="mb-10">
         <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest flex items-center gap-2">
-          <i class="fa-solid fa-microchip"></i> Offensive Research Portfolio
+          <i class="fa-solid fa-layer-group"></i> Practical Engineering
         </div>
-        <h2 class="text-3xl font-heading font-bold text-white mt-1">Hands-on Exploits & Security Labs</h2>
+        <h2 class="text-3xl font-heading font-bold text-white mt-1">Featured Technical Projects</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <!-- Windows Exploitation via Kali Linux -->
-        <div class="glass-panel p-7 rounded-xl relative overflow-hidden border-rose-500/30">
-          <div class="flex items-start justify-between mb-4">
-            <div>
-              <span class="text-[11px] font-mono text-rose-300 bg-rose-950/70 border border-rose-500/40 px-2.5 py-1 rounded">
-                LAB CASE STUDY // OFFENSIVE
-              </span>
-              <h3 class="text-xl font-bold font-heading text-white mt-2">Windows Vulnerability Assessment via Kali Linux</h3>
-              <p class="text-sm font-semibold text-cyan-400">Host Discovery, Protocol Auditing & Privilege Analysis</p>
-            </div>
-            <div class="w-11 h-11 rounded-lg bg-rose-500/10 border border-rose-400/40 flex items-center justify-center text-rose-400 text-xl">
-              <i class="fa-brands fa-windows"></i>
-            </div>
-          </div>
-          
-          <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-            Conducted full offensive reconnaissance against a Windows target using Kali Linux. Leveraged Nmap NSE scripting to discover critical unpatched vulnerabilities (MS17-010), verified unauthenticated exploit paths, and documented proof-of-concept mitigation vectors.
-          </p>
-
-          <div class="space-y-2 font-mono text-xs text-slate-300 mb-4">
-            <div class="p-2 bg-black/40 rounded border border-rose-500/20 flex items-center gap-2">
-              <i class="fa-solid fa-angle-right text-rose-400"></i>
-              <span>Kali Tooling: Nmap 7.95, Metasploit Framework, Netcat</span>
-            </div>
-            <div class="p-2 bg-black/40 rounded border border-cyan-500/20 flex items-center gap-2">
-              <i class="fa-solid fa-angle-right text-cyan-400"></i>
-              <span>Vector: SMBv1 Buffer Ingestion leading to arbitrary code execution</span>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap gap-2 pt-2">
-            <span class="text-[10px] font-mono bg-rose-950/60 text-rose-300 px-2.5 py-1 rounded border border-rose-500/30">Kali Linux</span>
-            <span class="text-[10px] font-mono bg-cyan-950/60 text-cyan-300 px-2.5 py-1 rounded border border-cyan-500/30">Nmap NSE</span>
-            <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Windows Hardening</span>
-          </div>
-        </div>
-
-        <!-- OWASP Juice Shop Vulnerability Research -->
+        <!-- OWASP Juice Shop Card -->
         <div class="glass-panel p-7 rounded-xl relative overflow-hidden border-cyan-500/30">
           <div class="flex items-start justify-between mb-4">
             <div>
               <span class="text-[11px] font-mono text-cyan-300 bg-cyan-950/70 border border-cyan-500/40 px-2.5 py-1 rounded">
-                LAB CASE STUDY // WEB APP SEC
+                APPLICATION SECURITY
               </span>
-              <h3 class="text-xl font-bold font-heading text-white mt-2">OWASP Juice Shop Web Vulnerability Research</h3>
-              <p class="text-sm font-semibold text-cyan-400">OWASP Top 10 Exploitation & Logic Flaws</p>
+              <h3 class="text-xl font-bold font-heading text-white mt-2">OWASP Juice Shop Vulnerability Assessment</h3>
+              <p class="text-xs font-mono text-slate-400">OWASP ZAP, Burp Suite, HTML/CSS</p>
             </div>
             <div class="w-11 h-11 rounded-lg bg-cyan-500/10 border border-cyan-400/40 flex items-center justify-center text-cyan-400 text-xl">
               <i class="fa-solid fa-flask"></i>
             </div>
           </div>
-          
           <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-            Audited the OWASP Juice Shop target application to discover modern web application flaws. Successfully executed SQL injection authentication bypasses, identified Broken Object Level Authorization (BOLA/IDOR), and dissected insecure client-side token validation.
+            Conducted black-box web vulnerability assessments uncovering SQL Injection, Broken Object Level Authorization (BOLA/IDOR), and sensitive data exposure. Authored customized HTML vulnerability reports with CVSS scoring and remediation steps.
           </p>
-
-          <div class="space-y-2 font-mono text-xs text-slate-300 mb-4">
-            <div class="p-2 bg-black/40 rounded border border-cyan-500/20 flex items-center gap-2">
-              <i class="fa-solid fa-angle-right text-cyan-400"></i>
-              <span>Identified: SQLi Login Bypass, Broken Access Control, Token Leaks</span>
-            </div>
-            <div class="p-2 bg-black/40 rounded border border-emerald-500/20 flex items-center gap-2">
-              <i class="fa-solid fa-angle-right text-emerald-400"></i>
-              <span>Tooling: Burp Suite Community, Browser DevTools, cURL</span>
-            </div>
-          </div>
-
-          <div class="flex flex-wrap gap-2 pt-2">
-            <span class="text-[10px] font-mono bg-cyan-950/60 text-cyan-300 px-2.5 py-1 rounded border border-cyan-500/30">OWASP Top 10</span>
-            <span class="text-[10px] font-mono bg-emerald-950/60 text-emerald-300 px-2.5 py-1 rounded border border-emerald-500/30">Burp Suite</span>
-            <span class="text-[10px] font-mono bg-slate-800 text-slate-300 px-2.5 py-1 rounded border border-slate-700">Web App Sec</span>
-          </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- Professional Experience & Academic Timeline -->
-    <section id="experience" class="py-16 px-5 lg:px-10 max-w-7xl mx-auto w-full">
-      <div class="mb-10">
-        <div class="text-xs font-mono text-rose-400 uppercase tracking-widest flex items-center gap-2">
-          <i class="fa-solid fa-building-shield"></i> Career Progression
-        </div>
-        <h2 class="text-3xl font-heading font-bold text-white mt-1">Internships & Specializations</h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- HTC Global Services -->
-        <div class="glass-panel p-7 rounded-xl relative overflow-hidden border-rose-500/30">
-          <div class="flex items-start justify-between mb-4">
-            <div>
-              <span class="text-[11px] font-mono text-rose-300 bg-rose-950/70 border border-rose-500/40 px-2.5 py-1 rounded">
-                1-YEAR INTEGRATED INTERNSHIP
-              </span>
-              <h3 class="text-xl font-bold font-heading text-white mt-2">Project Trainee - Ethical Hacking & Security Ops</h3>
-              <p class="text-sm font-semibold text-cyan-400">HTC Global Services</p>
-            </div>
-            <div class="w-11 h-11 rounded-lg bg-rose-500/10 border border-rose-400/40 flex items-center justify-center text-rose-400 text-xl">
-              <i class="fa-solid fa-crosshairs"></i>
-            </div>
-          </div>
-          
-          <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-            Actively engaged in discovering and exploiting vulnerabilities across internal systems, designing proof-of-concept tests, and correlating offensive activities with log monitoring to refine alert baselines.
-          </p>
-
-          <ul class="text-xs font-mono text-slate-300 space-y-2">
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-chevron-right text-rose-400"></i> Vulnerability discovery, proof-of-concept exploit creation, and risk classification.
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-chevron-right text-rose-400"></i> Foundational log monitoring, event correlation, and defensive baseline tuning.
-            </li>
-          </ul>
-        </div>
-
-        <!-- CodSoft Artificial Intelligence Internship -->
+        <!-- BCA Synopsis Portal Card -->
         <div class="glass-panel p-7 rounded-xl relative overflow-hidden border-cyan-500/30">
           <div class="flex items-start justify-between mb-4">
             <div>
-              <span class="text-[11px] font-mono text-cyan-300 bg-cyan-950/70 border border-cyan-500/40 px-2.5 py-1 rounded">
-                JUL 1, 2025 – JUL 31, 2025
+              <span class="text-[11px] font-mono text-emerald-300 bg-emerald-950/70 border border-emerald-500/40 px-2.5 py-1 rounded">
+                FULL-STACK & AI
               </span>
-              <h3 class="text-xl font-bold font-heading text-white mt-2">Artificial Intelligence Intern</h3>
-              <p class="text-sm font-semibold text-cyan-400">CodSoft</p>
+              <h3 class="text-xl font-bold font-heading text-white mt-2">BCA Synopsis Portal & AI Studio</h3>
+              <p class="text-xs font-mono text-slate-400">Node.js, Express, MongoDB, Gemini API, bcryptjs</p>
             </div>
-            <div class="w-11 h-11 rounded-lg bg-cyan-500/10 border border-cyan-400/40 flex items-center justify-center text-cyan-400 text-xl">
+            <div class="w-11 h-11 rounded-lg bg-emerald-500/10 border border-emerald-400/40 flex items-center justify-center text-emerald-400 text-xl">
               <i class="fa-solid fa-brain"></i>
             </div>
           </div>
-          
           <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-            Completed intensive, one-month Artificial Intelligence internship developing algorithmic models, data processing pipelines, and computational pattern analysis applicable to intelligent anomaly detection.
+            Built an academic proposal platform with a multi-step submission wizard. Integrated Google Gemini API to generate system architectures and abstracts, with client-side typesetting via html2pdf.js and bcryptjs authentication.
           </p>
-
-          <ul class="text-xs font-mono text-slate-300 space-y-2">
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-chevron-right text-cyan-400"></i> Algorithmic architecture modeling and computational logic implementation.
-            </li>
-            <li class="flex items-center gap-2">
-              <i class="fa-solid fa-chevron-right text-cyan-400"></i> Applied data handling techniques relevant to security anomaly detection.
-            </li>
-          </ul>
         </div>
 
       </div>
@@ -571,39 +657,29 @@
         <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-cyan-950/80 border border-cyan-400/40 flex items-center justify-center text-cyan-400 text-2xl shadow-glow-cyan">
           <i class="fa-solid fa-envelope-open-text"></i>
         </div>
-        <h2 class="text-3xl font-heading font-bold text-white mb-2">Connect with Mohammed Ashick</h2>
+        <h2 class="text-3xl font-heading font-bold text-white mb-2">Connect with Mohammed Ashick Rahman</h2>
         <p class="text-sm text-slate-300 max-w-lg mx-auto mb-6">
-          Reach out for penetration testing discussions, red team exercises, vulnerability assessment reports, or algorithmic problem-solving collaborations.
+          Reach out for penetration testing discussions, red team exercises, or vulnerability assessment reports.
         </p>
 
         <!-- Direct Profiles & Email Triggers -->
         <div class="flex flex-wrap justify-center gap-4">
           
-          <!-- Direct Mailto -->
           <a href="mailto:mohammed.ashickk@gmail.com" class="px-5 py-3 rounded-lg bg-cyan-500/15 border border-cyan-400/50 text-cyan-300 font-mono text-xs tracking-wider uppercase hover:bg-cyan-400 hover:text-black transition flex items-center gap-2 shadow-[0_0_15px_rgba(0,243,255,0.2)]">
             <i class="fa-solid fa-paper-plane"></i>
             <span>mohammed.ashickk@gmail.com</span>
           </a>
 
-          <!-- Copy Button -->
-          <button onclick="copyEmail(this)" class="px-5 py-3 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 font-mono text-xs tracking-wider uppercase hover:border-cyan-400 hover:text-cyan-300 transition flex items-center gap-2">
-            <i class="fa-regular fa-copy"></i>
-            <span id="copy-btn-text">Copy Email</span>
-          </button>
-
-          <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/ashickkk" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-lg glass-panel text-slate-200 font-mono text-xs tracking-wider uppercase hover:text-cyan-400 hover:border-cyan-400 transition flex items-center gap-2">
             <i class="fa-brands fa-linkedin text-cyan-400 text-sm"></i>
             <span>LinkedIn (ashickkk)</span>
           </a>
           
-          <!-- TryHackMe -->
           <a href="https://tryhackme.com/p/ashickk" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-lg glass-panel text-slate-200 font-mono text-xs tracking-wider uppercase hover:text-rose-400 hover:border-rose-500/40 transition flex items-center gap-2">
             <i class="fa-solid fa-user-ninja text-rose-400 text-sm"></i>
             <span>TryHackMe (ashickk)</span>
           </a>
 
-          <!-- LeetCode -->
           <a href="https://leetcode.com/u/ashickkk/" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-lg glass-panel text-slate-200 font-mono text-xs tracking-wider uppercase hover:text-amber-400 hover:border-amber-400/40 transition flex items-center gap-2">
             <i class="fa-solid fa-code text-amber-400 text-sm"></i>
             <span>LeetCode (ashickkk)</span>
@@ -615,7 +691,7 @@
 
     <!-- Footer -->
     <footer class="mt-auto border-t border-cyan-500/15 py-6 px-5 text-center text-slate-500 font-mono text-xs">
-      MOHAMMED ASHICK RAHMAN • Ethical Hacking & Vulnerability Assessment • Hindustan Institute of Technology and Science & HTC Global Services
+      MOHAMMED ASHICK RAHMAN • Offensive Security Specialist • Hindustan Institute of Technology and Science & HTC Global Services
     </footer>
 
   </div>
@@ -704,18 +780,6 @@
 
     initNodes();
     renderCanvas();
-
-    function copyEmail(btn) {
-      const textSpan = document.getElementById('copy-btn-text');
-      navigator.clipboard.writeText('mohammed.ashickk@gmail.com').then(() => {
-        textSpan.innerText = 'Copied!';
-        btn.classList.add('bg-emerald-500/20', 'border-emerald-400', 'text-emerald-300');
-        setTimeout(() => {
-          textSpan.innerText = 'Copy Email';
-          btn.classList.remove('bg-emerald-500/20', 'border-emerald-400', 'text-emerald-300');
-        }, 2000);
-      });
-    }
   </script>
 
 </body>
